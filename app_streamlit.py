@@ -13,16 +13,16 @@ from langdetect import detect
 
 # Carga y muestra el logo de la aplicación
 logo = Image.open('logo.jpg')
-st.image(logo, width=150)
+st.image(logo, width=100)
 
 # Título y descripción de la aplicación
 st.title("CHATBOT: Tu asistente Académico")
 #st.header("")
 st.subheader("""
   Proyecto fin de curso de PLN en Badajoz
-  Creado por:
-    - Antonio Jesús Abasolo Sierra
-    - Jose David Honrado García
+    Creado por:
+      - Antonio Jesús Abasolo Sierra
+      - Jose David Honrado García
 """)
 
 st.text("""
