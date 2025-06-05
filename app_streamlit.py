@@ -19,16 +19,16 @@ from langdetect import detect
 st.title("CHATBOT: Tu asistente Académico")
 #st.header("")
 st.subheader("""
-  Proyecto fin de curso de PLN en Badajoz
+	Proyecto fin de curso de PLN en Badajoz
   Creado por:
     * Antonio Jesús Abasolo Sierra
     * Jose David Honrado García
-""")
+  """)
 
-# st.text("""
+st.text("""
 #     Con CHATBOT, puedes consultar tus dudas sin esperas. No más llamada telefónicas, ni visitas al centro, ni más lecturas aburridas o búsquedas tediosas.
 #     Haz preguntas directamente y obtén respuestas inmediatas gracias a la IA.
-#     """)
+     """)
 
 # Cargar PDF
 pdf_obj = st.file_uploader(
