@@ -92,4 +92,3 @@ Asegúrate de verificar si la solicitud es jurídicamente correcta, si el solici
     st.sidebar.subheader('Creado por:')
     st.sidebar.markdown('Antonio Jesús Abasolo Sierra')
     st.sidebar.markdown('Jose David Honrado García')
-    )
