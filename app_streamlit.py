@@ -55,7 +55,7 @@ if not pdf_obj:
     st.stop()
 
 # Función para crear embeddings
-@st.cache_resource
+#@st.cache_resource
 
 
 # Principal / Main
