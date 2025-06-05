@@ -10,23 +10,16 @@ from langchain.chains.question_answering import load_qa_chain
 from langdetect import detect
 
 # Configuración de Streamlit
-st.set_page_config(
-    page_title="CHATBOT: Tu asistente Académico",
-    page_icon="📄",
-    initial_sidebar_state='collapsed',
-    menu_items={
-        'Get Help': 'https://www.noexiste.com',
-        'Report a bug': None,
-        'About': "CHATBOT es una herramienta para asistir sobre las información pública de un centro educativo. Permite realizar preguntas y obtener respuestas específicas de documentos pdf."
-    }
-)
 
 # Carga y muestra el logo de la aplicación
 logo = Image.open('logo.jpg')
-st.image(logo, width=250)
+st.image(logo, width=150)
 
 # Título y descripción de la aplicación
 st.title("CHATBOT: Tu asistente Académico")
+st.header("Antonio")
+st.subheader("David")
+st.text("Antonio David")
 st.write("""
     Con CHATBOT, puedes consultar tus dudas sin esperas. No más llamada telefónicas, ni visitas al centro, ni más lecturas aburridas o búsquedas tediosas.
     Haz preguntas directamente y obtén respuestas inmediatas gracias a la IA.
