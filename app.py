@@ -35,20 +35,20 @@ pdf_obj = st.file_uploader(
     "Carga tu documento", type="pdf")
 
 # Path to folder containing PDF files
-pdf_folder = Path("pdf")
-documents = []
+# pdf_folder = Path("pdf")
+# documents = []
 
-for pdf_file in pdf_folder.glob("*.pdf"):
-    print("reading",pdf_file)
-    text = ""
-    with fitz.open(pdf_file) as doc:
-        for page in doc:
-            text += page.get_text()
-    # Basic cleanup
-    text = re.sub(r'\s+', ' ', text)
-    documents.append(text)
+# for pdf_file in pdf_folder.glob("*.pdf"):
+#     print("reading",pdf_file)
+#     text = ""
+#     with fitz.open(pdf_file) as doc:
+#         for page in doc:
+#             text += page.get_text()
+#     # Basic cleanup
+#     text = re.sub(r'\s+', ' ', text)
+#     documents.append(text)
 
-print(f"Extracted text from {len(documents)} PDFs.")
+# print(f"Extracted text from {len(documents)} PDFs.")
 
 # Principal
 if len(documents) > 0:
