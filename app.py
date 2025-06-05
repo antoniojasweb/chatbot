@@ -76,24 +76,24 @@ Asegúrate de verificar si la solicitud es jurídicamente correcta, si el solici
             """,)
         ]
 
-        # Crear botones para los prompts con descripciones emergentes
-        for index, (prompt, label, description) in enumerate(prompts):
-            # Decide en qué columna colocar el botón basándose en su índice
-            col = st.columns(2)[index % 1]
-            with col:
-                if st.button(label, help=description):
-                    st.session_state['selected_prompt'] = prompt
+        # # Crear botones para los prompts con descripciones emergentes
+        # for index, (prompt, label, description) in enumerate(prompts):
+        #     # Decide en qué columna colocar el botón basándose en su índice
+        #     col = st.columns(2)[index % 1]
+        #     with col:
+        #         if st.button(label, help=description):
+        #             st.session_state['selected_prompt'] = prompt
 
-        # Mostrar el área de texto con el prompt seleccionado o el ingresado por el usuario
-        user_question = st.text_area(
-            "Haz una pregunta sobre tu PDF:",
-            value=st.session_state.get('selected_prompt', ''),
-            height=150
-        )
+        # # Mostrar el área de texto con el prompt seleccionado o el ingresado por el usuario
+        # user_question = st.text_area(
+        #     "Haz una pregunta sobre tu PDF:",
+        #     value=st.session_state.get('selected_prompt', ''),
+        #     height=150
+        # )
 
-        if user_question:
-            #....
-            st.write(respuesta)
+        # if user_question:
+        #     #....
+        #     st.write(respuesta)
     else:
         st.info("Esta opción se implementará próximamente")
 
