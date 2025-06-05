@@ -17,11 +17,12 @@ st.image(logo, width=150)
 
 # Título y descripción de la aplicación
 st.title("CHATBOT: Tu asistente Académico")
-st.header("Proyecto fin de curso de PLN en Badajoz")
+#st.header("")
 st.subheader("""
-Creado por:
-  - Antonio Jesús Abasolo Sierra
-  - Jose David Honrado García
+  Proyecto fin de curso de PLN en Badajoz
+  Creado por:
+    - Antonio Jesús Abasolo Sierra
+    - Jose David Honrado García
 """)
 
 st.text("""
