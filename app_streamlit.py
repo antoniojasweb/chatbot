@@ -31,6 +31,10 @@ st.write("""
     Con CHATBOT, puedes consultar tus dudas sin esperas.
     No más llamada telefónicas, ni visitas al centro, ni más lecturas aburridas o búsquedas tediosas.
     Haz preguntas directamente y obtén respuestas inmediatas gracias a la IA.
+    ---
+    Creado por:
+      - Antonio Jesús Abasolo Sierra
+      - Jose David Honrado García
     """)
 
 # Cargar PDF
