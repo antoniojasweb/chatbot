@@ -51,7 +51,8 @@ pdf_obj = st.file_uploader(
 # print(f"Extracted text from {len(documents)} PDFs.")
 
 # Principal
-if len(documents) > 0:
+#if len(documents) > 0:
+if pdf_obj:
     # Opciones de usuario
     st.sidebar.header('Opciones')
     options = [
