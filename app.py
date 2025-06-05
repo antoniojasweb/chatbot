@@ -25,9 +25,9 @@ st.subheader("""
             - Jose David Honrado García
           """)
 
-st.text("""
 #     Bienvenido a BOT_IES, puedes consultar tus dudas sin esperas. No más llamada telefónicas, ni visitas al centro, ni más lecturas aburridas o búsquedas tediosas.
 #     Haz preguntas directamente y obtén respuestas inmediatas gracias a la IA.
+st.text("""
      """)
 
 # Cargar PDF
@@ -35,7 +35,7 @@ pdf_obj = st.file_uploader(
     "Carga tu documento", type="pdf")
 
 # Path to folder containing PDF files
-pdf_folder = Path("./pdf")
+pdf_folder = Path("pdf")
 documents = []
 
 for pdf_file in pdf_folder.glob("*.pdf"):
