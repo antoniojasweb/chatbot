@@ -20,10 +20,10 @@ from langdetect import detect
 st.title("BOT_IES: Tu asistente Académico")
 st.header("Proyecto fin de curso de PLN en Badajoz")
 st.subheader("""
-  Creado por:
-    * Antonio Jesús Abasolo Sierra
-    * Jose David Honrado García
-  """)
+          Creado por:
+            - Antonio Jesús Abasolo Sierra
+            - Jose David Honrado García
+          """)
 
 st.text("""
 #     Bienvenido a BOT_IES, puedes consultar tus dudas sin esperas. No más llamada telefónicas, ni visitas al centro, ni más lecturas aburridas o búsquedas tediosas.
@@ -35,7 +35,7 @@ pdf_obj = st.file_uploader(
     "Carga tu documento", type="pdf")
 
 # Path to folder containing PDF files
-pdf_folder = Path("pdf")
+pdf_folder = Path("./pdf")
 documents = []
 
 for pdf_file in pdf_folder.glob("*.pdf"):
