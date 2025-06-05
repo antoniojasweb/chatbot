@@ -7,4 +7,4 @@ pdf2docx
 sentence_transformers
 langdetect
 langchain-community
-pickle
+#pickle
