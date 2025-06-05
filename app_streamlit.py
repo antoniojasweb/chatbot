@@ -22,7 +22,7 @@ st.set_page_config(
 )
 
 # Carga y muestra el logo de la aplicación
-logo = Image.open('img/logo.jpg')
+logo = Image.open('logo.jpg')
 st.image(logo, width=250)
 
 # Título y descripción de la aplicación
