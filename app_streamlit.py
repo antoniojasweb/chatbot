@@ -33,32 +33,16 @@ st.write("""
     Haz preguntas directamente y obtén respuestas inmediatas gracias a la IA.
     """)
 
-# Cargar API Key
-# Intenta cargar la API Key desde st.secrets
-#API_KEY = st.secrets.get('API_KEY')
-API_KEY="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"
-
-# Si la API Key no está en st.secrets, pídela al usuario
-if not API_KEY:
-    API_KEY = st.text_input('OpenAI API Key', type='password')
-
-# Si no se ha proporcionado la API Key, no permitas que el usuario haga nada más
-if not API_KEY:
-    st.stop()
-
 # Cargar PDF
 pdf_obj = st.file_uploader(
-    "Carga tu documento / Upload your document", type="pdf")
+    "Carga tu documento", type="pdf")
 
 # Si no se ha cargado un PDF, no permitas que el usuario haga nada más
 if not pdf_obj:
     st.stop()
 
-# Función para crear embeddings
-#@st.cache_resource
 
-
-# Principal / Main
+# Principal
 if pdf_obj:
 
     # Opciones de usuario
@@ -98,7 +82,6 @@ Asegúrate de verificar si la solicitud es jurídicamente correcta, si el solici
         )
 
         if user_question:
-            os.environ["OPENAI_API_KEY"] = API_KEY
             #....
             st.write(respuesta)
     else:
