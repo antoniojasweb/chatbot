@@ -28,10 +28,9 @@ st.image(logo, width=250)
 # Título y descripción de la aplicación
 st.title("CHATBOT: Tu asistente Académico")
 st.write("""
-    Con CHATBOT, puedes consultar tus dudas sin esperas.
-    No más llamada telefónicas, ni visitas al centro, ni más lecturas aburridas o búsquedas tediosas.
+    Con CHATBOT, puedes consultar tus dudas sin esperas. No más llamada telefónicas, ni visitas al centro, ni más lecturas aburridas o búsquedas tediosas.
     Haz preguntas directamente y obtén respuestas inmediatas gracias a la IA.
-    ---
+    
     Creado por:
       - Antonio Jesús Abasolo Sierra
       - Jose David Honrado García
