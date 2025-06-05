@@ -37,14 +37,9 @@ st.write("""
 pdf_obj = st.file_uploader(
     "Carga tu documento", type="pdf")
 
-# Si no se ha cargado un PDF, no permitas que el usuario haga nada más
-if not pdf_obj:
-    st.stop()
-
 
 # Principal
 if pdf_obj:
-
     # Opciones de usuario
     st.sidebar.header('Opciones')
     options = [
@@ -87,7 +82,7 @@ Asegúrate de verificar si la solicitud es jurídicamente correcta, si el solici
     else:
         st.info("Esta opción se implementará próximamente")
 
-    # Footer / Pie de página
+    # Pie de página
     st.sidebar.markdown('---')
     st.sidebar.subheader('Creado por:')
     st.sidebar.markdown('Antonio Jesús Abasolo Sierra')
