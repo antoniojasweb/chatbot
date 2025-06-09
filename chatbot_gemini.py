@@ -7,8 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1mahG9jHmXEvvLzc2Z08wRRR_jt45oz-C
 """
 
-!pip install streamlit PyPDF2 spacy sentence-transformers scikit-learn
-!python -m spacy download es_core_news_sm
+#!pip install streamlit PyPDF2 spacy sentence-transformers scikit-learn
+#!python -m spacy download es_core_news_sm
 
 import streamlit as st
 import PyPDF2
